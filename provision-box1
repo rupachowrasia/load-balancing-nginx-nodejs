@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+function config_hosts(){
+  echo "Configuring /etc/hosts ..."
+  echo "192.168.31.101 box1.me testenv1"   >> /etc/hosts
+}
+
+config_hosts
+echo "DONE"
